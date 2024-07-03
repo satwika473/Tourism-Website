@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tourist Registration Form</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        color: #fff;
+    }
+    .container {
+        max-width: 500px;
+        margin: 10px auto;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #00ccff;
+    }
+    input[type="text"], input[type="email"], input[type="date"], select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #333;
+    }
+    input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #333;
+    }
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<nav id="navBar" class="navBarwhite">
+    <a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVZkVsrOhPwVJcv39eEwuzdg3ZL-RHi61EsQ&usqp=CAU" class="logo"></a>
+    <ul class="navlinks">
+        <li><a href="index.html" class="active">Famous Destinations</a></li>
+    <li><a href="rep.html">Hotels & Restaurants</a></li>
+    <li><a href="listing.html">Online Packages</a></li>
+    </ul>
+   
+</nav>
+<body>
+<div class="container">
+    <h2>Tourist Registration Form</h2>
+    <form action="#" method="post">
+        <div>
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+        </div>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="date" name="date_of_birth" placeholder="Date of Birth" required>
+        <select name="phone_type" required>
+            <option value="">Select Your Choice Of Travel</option>
+            <option value="mobile">Family Tour</option>
+            <option value="home">Friends Tour</option>
+            <option value="work">Alone</option>
+            <option value="work">Honeymoon</option>
+        </select>
+        <input type="tel" name="phone_number" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <input type="text" name="residential_address" placeholder="Residential Address" required>
+        <input type="text" name="touring_address" placeholder="Touring Address" required>
+        <select name="tourist_plan" required>
+            <option value="">Select Tourist Plan</option>
+            <option value="sightseeing">Sightseeing</option>
+            <option value="beach_trip">Beach Trip</option>
+            <option value="mountain_hiking">Mountain Hiking</option>
+            <option value="city_tour">City Tour</option>
+        </select>
+        <select name="premium_plan" required>
+            <option value="">Select Premium Plan</option>
+            <option value="gold">Gold Premium</option>
+            <option value="platinum">Platinum Premium</option>
+            <option value="diamond">Diamond Premium</option>
+        </select>
+        <input type="submit" value="Register">
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tourism</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .location {
+            margin-top: 20px;
+        }
+        .map {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 30%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<nav id="navBar" class="navBarwhite">
+    <a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVZkVsrOhPwVJcv39eEwuzdg3ZL-RHi61EsQ&usqp=CAU" class="logo"></a>
+    <ul class="navlinks">
+        <li><a href="index.html" class="active">Famous Destinations</a></li>
+        <li><a href="rep.html">Hotels & Restaurants</a></li>
+        <li><a href="listing.html">Online Packages</a></li>
+    </ul>
+    <a href="register.html" class="rgb">Register</a>
+    <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+</nav>
+<body>
+    <div class="container">
+        <h1>Germany</h1>
+        <p>Germany, a country steeped in history and culture, beckons travelers with its charming medieval towns, vibrant cities, and stunning natural landscapes. From the iconic Brandenburg Gate in Berlin to the fairytale Neuschwanstein Castle in Bavaria, Germany boasts a wealth of architectural wonders and cultural treasures. Visitors can explore the romantic Rhine Valley dotted with vineyards and ancient castles, wander through the picturesque streets of Heidelberg, or experience the bustling markets of Munich. The country's rich cultural scene offers world-class museums, opera houses, and theaters, while its culinary delights, including hearty sausages, pretzels, and fine wines, tantalize the taste buds. With efficient transportation networks and warm hospitality, Germany invites travelers to discover its diverse attractions and immerse themselves in its storied past and vibrant present.</p>
+        <div class="image-container">
+            <img src="https://media.istockphoto.com/id/506583546/photo/illuminated-dom-in-cologne.jpg?s=612x612&w=0&k=20&c=bguyQ6ColHvQMwrkMS9r9YLoTY-GnzhDzGdl0DuQfUc=">
+            <img src="https://media.istockphoto.com/id/907886562/photo/berlin-cathedral-with-ship-on-spree-river-at-sunset-berlin-germany.jpg?s=612x612&w=0&k=20&c=x6HDf4ab5lMcf3EfIHcUdHyG5ZVt4JNj3DKB8rIBHAY=">
+            <img src="https://media.istockphoto.com/id/619638736/photo/historic-town-of-rothenburg-ob-der-tauber-franconia-bavaria-germany.jpg?s=612x612&w=0&k=20&c=IPnUDs04lzGWP7T4kqd3OlswxsIAEnTpsN_eSaPVE8I=">
+        </div>
+        <div class="location">
+            <h2>Location</h2>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5135219.698664233!2d5.1719926019595635!3d51.06358430163638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a721ec2b1be6b%3A0x75e85d6b8e91e55b!2sGermany!5e0!3m2!1sen!2sin!4v1709270161893!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

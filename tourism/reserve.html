@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Reservation Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        color: #fff;
+    }
+    .container {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #00ccff;
+    }
+    input[type="text"], input[type="tel"], select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #333;
+    }
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<nav id="navBar" class="navBarwhite">
+    <a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVZkVsrOhPwVJcv39eEwuzdg3ZL-RHi61EsQ&usqp=CAU" class="logo"></a>
+    <ul class="navlinks">
+        <li><a href="index.html" class="active">Famous Destinations</a></li>
+    <li><a href="rep.html">Hotels & Restaurants</a></li>
+    <li><a href="listing.html">Online Packages</a></li>
+    </ul>
+   
+</nav>
+<body>
+<div class="container">
+    <h2>Reservation Form</h2>
+    <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <select name="reservation_type" required>
+            <option value="">Select Reservation Type</option>
+            <option value="restaurant">Restaurant</option>
+            <option value="hotel">Hotel</option>
+        </select>
+        <select name="cabin_type">
+            <option value="">Select Cabin Type</option>
+            <option value="standard">Standard</option>
+            <option value="deluxe">Deluxe</option>
+            <option value="suite">Suite</option>
+        </select>
+        <select name="bedding_type">
+            <option value="">Select Bedding Type</option>
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="king">King</option>
+        </select>
+        <select name="room_type">
+            <option value="">Select Room Type</option>
+            <option value="standard">Standard Room</option>
+            <option value="balcony">Room with Balcony</option>
+            <option value="closed">Room with Closed Balcony</option>
+            <option value="open">Room with Open Balcony</option>
+        </select>
+        <input type="checkbox" name="insurance" id="insurance">
+        <label for="insurance">Travel Insurance</label>
+        <input type="submit" value="Reserve">
+    </form>
+</div>
+</body>
+</html>
